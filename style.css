@@ -1,5 +1,5 @@
 :root {
-  --primary-clr: #b38add;
+  --primary-clr: #67ffff;
 }
 * {
   margin: 0;
@@ -12,7 +12,7 @@
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background: #f5f5f5;
+  background: #efff9f;
   border-radius: 50px;
 }
 ::-webkit-scrollbar-thumb {
@@ -27,7 +27,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-bottom: 30px;
-  background-color: #e2e1dc;
+  background-color: #c294fc;
 }
 .container {
   position: relative;
