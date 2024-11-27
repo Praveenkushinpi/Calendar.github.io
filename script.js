@@ -59,7 +59,6 @@ function renderCalendar(date) {
   }
 
 
-
   for (let i = 1; i <= lastDate; i++) {
 
     const dateStr = `${year}-${month + 1}-${i}`;
@@ -79,7 +78,6 @@ function renderCalendar(date) {
 }
 
 
-
 function createDayElement(day, extraClass = "") {
 
   const dayElement = document.createElement("div");
@@ -93,7 +91,6 @@ function createDayElement(day, extraClass = "") {
   return dayElement;
 
 }
-
 
 
 function openEventModal(dateStr) {
@@ -138,7 +135,7 @@ saveEventBtn.addEventListener("click", () => {
 
 });
 
-
+// Navigate months
 
 prevMonthBtn.addEventListener("click", () => {
 
@@ -155,6 +152,7 @@ nextMonthBtn.addEventListener("click", () => {
   renderCalendar(currentDate);
 
 });
+
 
 
 renderCalendar(currentDate);
