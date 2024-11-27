@@ -24,9 +24,9 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 
 let currentDate = new Date();
 
-let events = {};  // Store events in an object
+let events = {};  
 
-// Render calendar
+
 
 function renderCalendar(date) {
 
@@ -48,7 +48,7 @@ function renderCalendar(date) {
 
   const lastDate = lastDay.getDate();
 
-  // Previous month's days
+
 
   const prevMonthDays = new Date(year, month, 0).getDate();
 
@@ -58,7 +58,7 @@ function renderCalendar(date) {
 
   }
 
-  // Current month's days
+
 
   for (let i = 1; i <= lastDate; i++) {
 
@@ -78,7 +78,7 @@ function renderCalendar(date) {
 
 }
 
-// Create day elements
+
 
 function createDayElement(day, extraClass = "") {
 
@@ -94,7 +94,7 @@ function createDayElement(day, extraClass = "") {
 
 }
 
-// Open modal to add event
+
 
 function openEventModal(dateStr) {
 
@@ -106,7 +106,7 @@ function openEventModal(dateStr) {
 
 }
 
-// Close modal
+
 
 closeModalBtn.addEventListener("click", () => {
 
@@ -114,7 +114,7 @@ closeModalBtn.addEventListener("click", () => {
 
 });
 
-// Save event
+
 
 saveEventBtn.addEventListener("click", () => {
 
@@ -130,7 +130,7 @@ saveEventBtn.addEventListener("click", () => {
 
   } else {
 
-    delete events[dateStr]; // Remove event if title is empty
+    delete events[dateStr]; 
 
   }
 
@@ -138,7 +138,7 @@ saveEventBtn.addEventListener("click", () => {
 
 });
 
-// Navigate months
+
 
 prevMonthBtn.addEventListener("click", () => {
 
@@ -156,6 +156,5 @@ nextMonthBtn.addEventListener("click", () => {
 
 });
 
-// Initial render
 
 renderCalendar(currentDate);
